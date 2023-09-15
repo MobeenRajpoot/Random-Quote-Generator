@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    background: url(img/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header {
+    background-color: black;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+
+.header h2 {
+    font-weight: 300;
+}
+
+.main-content {
+    background-color: #fff;
+    height: auto;
+    width: 400px;
+    border-radius: 10px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.main-content .quote {
+    font-size: 20px;
+    line-height: 30px;
+    color: rgb(81, 73, 73);
+    margin-bottom: 7px;
+}
+
+.person {
+    color: rgb(127, 29, 145);
+    letter-spacing: 3px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+button {
+    background-color: black;
+    color: #fff;
+    border: none;
+    padding: 8px 10px;
+    font-size: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+/* Media Queries for small screens under 520px */
+
+@media (max-width: 520px) {
+    .container {
+        padding: 10px;
+    }
+
+    .main-content {
+        width: 90%;
+    }
+    .person {
+        font-size: 16px;
+    }
+}
